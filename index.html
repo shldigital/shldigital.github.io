@@ -1,40 +1,97 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <title>Introduction to programming, using Python</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/serif.css">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3>Sussex Digital Humanities Lab:<br>
+                    Digital Methods Accelerator Program</h3>
+            </section>
+            <section>
+                <h3>Introduction to programming<br>
+                    with Python</h3><br>
+                N. Seymour-Smith, Sharon Webb, ...
+            </section>
+            <section>
+                <h4>What will we learn?</h4>
+                <ul>
+                    <li class="fragment">How to write and execute basic programs<br> in Python 🐍</li>
+                    <li class="fragment">Core programming concepts: Loops ➿</li>
+                    <li class="fragment">Core programming concepts: Variables 📦</li>
+                    <li class="fragment">Core programming concepts: Conditions ❓</li>
+                    <li class="fragment">Bonus: How to draw snowflakes! ❄️</li>
+                </ul>
+            </section>
+            <section>
+                <h4>More importantly!</h4>
+                <div class="fragment">This is the start of a journey!<br>
+                    <div class="r-fit-text">🛣️</div>
+                </div>
+                <aside class="notes">
+                    <ul>
+                        <li>You can learn programming on your own!</li>
+                        <li>Resources out there are many, varied and excellent</li>
+                        <li>We hope to help jump start or accelerate your progress on this journey by introducing/demystifying basic concepts and signposting to resources to improve</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h4>Quick sidebar:</h4>
+                <div class="fragment">y tho<br>😐<br>🤝<br>🪑</div>
+                <aside class="notes">
+                    <ul>
+                        <li>AI exists! Why code now?</li>
+                        <li>Need to know about the full stack or we won't have agency about what's happening</li>
+                        <li>Coding is creative!</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h4>What is python? 🐍</h4>
+                <ul>
+                    <li class="fragment">A helpful language for beginners</li>
+                    <li class="fragment">Widely used in digital humanities and numerical analysis</li>
+                    <li class="fragment">Not the only choice!</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Introducing Thonny</h4>
+                <a href="https://thonny.org">https://thonny.org</a>
+                <iframe data-src="https://thonny.org/" width="100%" height="500"></iframe>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
 </html>
