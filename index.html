@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/serif.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -95,23 +96,19 @@
             </section>
             <section>
                 <h4>Editor sections</h4>
-                <img alt="The thonny interface, with the two important sections marked and labelled. The top section is labelled 'script area', and the bottom section is labelled 'shell (interpreter) area'"
-                    src="assets/thonny-sections.png" height="500" />
+                <img alt="The thonny interface, with the two important sections marked and labelled. The top section is labelled 'script area', and the bottom section is labelled 'shell (interpreter) area'" src="assets/thonny-sections.png" height="500" />
             </section>
             <section>
                 <h4>Hello World!</h4>
-                <img alt="The text 'print('hello world')', written into the shell area" src="assets/hello-world.png"
-                    height="500" />
+                <img alt="The text 'print('hello world')', written into the shell area" src="assets/hello-world.png" height="500" />
             </section>
             <section>
                 <h4>Writing a script</h4>
-                <img alt="The text 'print('hello world')', written into the script area, with the 'run' button on the thonny interface highlighted in green"
-                    src="assets/scripting-run.png" height="500" />
+                <img alt="The text 'print('hello world')', written into the script area, with the 'run' button on the thonny interface highlighted in green" src="assets/scripting-run.png" height="500" />
             </section>
             <section>
                 <p>After clicking the run button you'll be prompted to save the script as a text file</p>
-                <img alt="Thonny's save prompt. The script has been named 'hello-world.py' and is being saved into a folder titled 'python-workshop' with the date appended"
-                    src="assets/scripting-save.png" height="300" />
+                <img alt="Thonny's save prompt. The script has been named 'hello-world.py' and is being saved into a folder titled 'python-workshop' with the date appended" src="assets/scripting-save.png" height="300" />
                 <p>Make sure to save the script with a memorable name!</p>
             </section>
             <section>
@@ -165,8 +162,8 @@
                     print("Loop number ", i)
                 print("Loop finished!")
                 </code></pre>
-                <p>Note the indentation ⇥ before the <code>print</code> statement</p>
-                <p>This indentation is achieved using the <code>tab</code> key</p>
+                <p>Note the indentation ⇥ before the <code style="color: #ddd; background-color: #272822">print</code> statement</p>
+                <p>This indentation is achieved using the <code style="color: #ddd; background-color: #272822">tab</code> key</p>
                 <p class="fragment">The final line is not indented, and therefore is not a part of the loop</p>
             </section>
             <section>
@@ -187,9 +184,69 @@
                 <ul>
                     <li>How to use python to execute tasks in a loop</li>
                     <li>How we can track the number of loops (iterations)</li>
-                    <li>We've encountered our first variable <code>i</code>!</li>
+                    <li>We've encountered our first variable <code style="color: #ddd; background-color: #272822">i</code>!</li>
                 </ul>
-                <p><br>Congratulations 🎉</p </section>
+                <p><br>Congratulations 🎉</p>
+            </section>
+            <section>
+                <h3>Conditionals ❓<br>&<br>Variables 📦<h3>
+            </section>
+            <section>
+                Automation isn't just about repetition, it's also about making decison based on available data:
+                <pre><code data-trim class="language-python">
+if forecast is "rain":
+    print("I'm bringing my umbrella! ☂️")
+else:
+    print("I'm bringing my hockey gear! 🏑")
+                </code></pre>
+                Note here that <br><code style="color: #ddd; background-color: #272822">forecast</code><br> can be <code>"rain"</code> <b>or</b> it could be something else!<br>e.g. <code>"sun"</code>, <code>"thunderstorm"</code> etc.
+            </section>
+            <section>
+                <ul>
+                    <li><code>forecast</code> is what's known as a variable!</li>
+                    <li>
+                        A variable is like a box 📦 that we can use to store things like strings or other objects using <b>assignment</b>
+                    </li>
+                </ul>
+                <pre><code data-trim class="language-python" data-line-numbers="1|2-3|4|5-6|7|8-9">
+>>> forecast = "rain"
+>>> print(forecast)
+rain
+>>> forecast = "shine"
+>>> print(forecast)
+shine
+>>> forecast = get_weather_forecast("tomorrow")
+>>> print(forecast)
+showers
+                </code></pre>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        We must give the box/variable a name
+                    </li>
+                    <li>
+                        here we used <code>forecast</code>, but it can be series of alphanumeric characters or underscores
+                    </li>
+                    <li>
+                        and then we can refer to the contents of that box using this label.
+                    </li>
+                </ul>
+                <p>
+                </p>
+            </section>
+            <section>
+                <p>🌟
+                </p>
+                <p>
+                    It's often useful to put some thought into the naming of variables - like comments, good variable naming can help
+                    future developers (including yourself) understand the code better.
+                </p>
+            </section>
+            <section>
+                <h3> Conditionals!
+                </h3>
+            </section>
         </div>
     </div>
 
