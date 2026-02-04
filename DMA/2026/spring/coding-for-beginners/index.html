@@ -41,7 +41,7 @@
                 <div class="fragment">y tho<br>😐<br>🤝<br>🪑</div>
             </section>
             <section>
-                <img alt="An arcade machine " src="assets/QCB.JPG" width="380" />
+                <img alt="The Queer Code Breakers arcade machine" src="assets/QCB.JPG" width="380" />
             </section>
             <section>
                 <h4>Some useful terms:</h4>
@@ -224,22 +224,6 @@ for number in range(10): # BTW range(10) starts at 0!
                 <h3>Conditionals ❓<br>&<br>Variables 📦<h3>
             </section>
             <section>
-                Automation isn't just about repetition, it's also about making decisons based on available data:
-                <pre><code data-trim class="language-python">
-if forecast == "rain":
-    print("🤖💬 I'm bringing my umbrella! ☂️")
-else:
-    print("🤖💬 I'm bringing my hockey gear! 🏑")
-                </code></pre>
-                Note here that <br><code style="color: #ddd; background-color: #272822">forecast</code><br> can be <code>"rain"</code> <b>or</b> it could be something else!<br>e.g. <code>"sun"</code>, <code>"thunderstorm"</code> etc.
-            </section>
-            <section>
-                <ul>
-                    <li><code>forecast</code> is what's known as a variable!</li>
-                    <li>
-                        A variable is like a box 📦 that we can use to store things like strings or other objects using <b>assignment</b>
-                    </li>
-                </ul>
                 <pre><code data-trim class="language-python" data-line-numbers="1|2-3|4|5-6|7|8-9">
 >>> forecast = "rain"
 >>> print(forecast) # Note: there's no quotation marks ""
@@ -251,6 +235,13 @@ shine
 >>> print(forecast)
 showers
                 </code></pre>
+                <ul>
+                    <li><code>forecast</code> is what's known as a variable!</li>
+                    <li>
+                        A variable is like a box 📦 that we can use to store things like strings or other objects using
+                        <b>assignment</b>
+                    </li>
+                </ul>
             </section>
             <section>
                 <ul>
@@ -268,6 +259,18 @@ showers
                 </p>
             </section>
             <section>
+                Automation isn't just about repetition, it's also about making decisons based on available data:
+                <pre><code data-trim class="language-python">
+            if forecast == "rain":
+                print("🤖💬 I'm bringing my umbrella! ☂️")
+            else:
+                print("🤖💬 I'm bringing my hockey gear! 🏑")
+                            </code></pre>
+                Note here that <br><code style="color: #ddd; background-color: #272822">forecast</code><br> can be
+                <code>"rain"</code> <b>or</b> it could be something else!<br>e.g. <code>"sun"</code>, <code>"thunderstorm"</code>
+                etc.
+            </section>
+            <section>
                 <p>🌟
                 </p>
                 <p>
@@ -278,7 +281,7 @@ showers
             <section>
                 <h3> Conditionals:
                 </h3>
-                Let's use the <code>input()</code> function to get info from world outside our script:
+                Let's use the <code>input()</code> function to get info from the world outside our script:
                 <pre><code data-trim class="language-python" data-line-numbers="1|2|3-6">
 forecast = input("What's the forecast?")
 print("The forecast is: ", forecast)
